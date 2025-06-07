@@ -89,17 +89,26 @@ footer {
   margin-left: 0.5rem;
   color:#f2f2f2
 }
+
 .btn {
+  display: inline-block;
+  margin-top: 12px;  /* distanza verticale sopra il pulsante */
+  padding: 10px 20px;
   background-color: #00ffff;
   color: #0f0f0f;
+  font-weight: bold;
   border: none;
-  padding: 1px 25px;
-  font-size: 1.2rem;
   border-radius: 8px;
   cursor: pointer;
+  text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .btn:hover {
   background-color: #00bbbb;
+}
+
+/* Optional: per un po’ di margine tra progetti */
+.project {
+  margin-bottom: 2rem;
 }
