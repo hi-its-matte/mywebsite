@@ -1,113 +1,73 @@
+
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0f0f0f;
-  color: #f2f2f2;
   margin: 0;
-  padding: 0;
-  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #f2f2f2;
 }
 
 header {
+  text-align: center;
   padding: 2rem;
-  background: #1a1a1a;
+  background: #111;
 }
 
-header h1 {
-  font-size: 3rem;
-  margin: 0;
-}
-
-header p {
+.subtitle {
   font-size: 1.2rem;
-  margin-top: 0.5rem;
+  color: #ccc;
 }
 
-.socials {
-  margin-top: 1rem;
-}
-
-.socials a {
-  color: #00ffff;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: bold;
-}
-
-main {
+section {
   padding: 2rem;
+  max-width: 800px;
+  margin: auto;
 }
 
-.projects h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.languages span {
+  background-color: #222;
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem;
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 0.9rem;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.project {
-  background: #1e1e1e;
-  border-radius: 12px;
-  overflow: hidden;
-  width: 250px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+.projects .project {
+  background: #1a1a1a;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .project img {
-  width: 100%;
-  height: auto;
-  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
-.project p {
-  padding: 0.5rem;
-  font-size: 1rem;
-}
-
-footer {
-  background: #1a1a1a;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-.lang-switcher {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1000;
-}
-
-.lang-switcher button {
-  background: transparent;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  margin-left: 0.5rem;
-  color:#f2f2f2
+.buttons {
+  margin-top: 1rem;
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 12px;  /* distanza verticale sopra il pulsante */
-  padding: 10px 20px;
-  background-color: #00ffff;
-  color: #0f0f0f;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+  padding: 0.5rem 1.2rem;
+  margin: 0.3rem;
+  background-color: #007bff;
+  color: white;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
 .btn:hover {
-  background-color: #00bbbb;
+  background-color: #0056b3;
 }
 
-.project {
-  margin-bottom: 2rem;
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111;
+  margin-top: 2rem;
 }
