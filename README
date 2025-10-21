@@ -1,0 +1,16 @@
+This is my personal website, where people can:
+-Contact me
+-Explore my public repositories
+-Download or preview my applications directly on the web
+-The website is simple, clean, and lightweight, designed to offer quick access to my work and projects.
+
+🔧 Technologies Used
+HTML, CSS – for structure, styling, and interactivity
+Heroicons (SVG) – for icons and visual elements
+Netlify – for hosting
+
+🚀 Features
+📥 App download links
+🌐 Online previews of web apps
+📂 Repository list with direct GitHub links
+📧 Contact section
