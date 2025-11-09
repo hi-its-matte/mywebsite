@@ -1,100 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/jpeg" href="mlogo.jpg" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Matte Dev - Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sito in Manutenzione</title>
+  <style>
+    /* --- Base Style (stesso schema del tuo style.css senza blu) --- */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      background: linear-gradient(45deg, #ff8800, #ffb84d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: glow 3s ease-in-out infinite;
+    }
+
+    @keyframes glow {
+      0%, 100% { text-shadow: 0 0 20px rgba(255, 136, 0, 0.3); }
+      50% { text-shadow: 0 0 40px rgba(255, 184, 77, 0.6); }
+    }
+
+    p {
+      color: #ccc;
+      font-size: 1.3rem;
+      margin: 1.5rem 0 2rem;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .gear {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 1.5rem;
+      animation: rotate 5s linear infinite;
+      filter: drop-shadow(0 0 10px rgba(255, 136, 0, 0.4));
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 2.5rem;
+      background: linear-gradient(45deg, #ff8800, #cc6a00);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 136, 0, 0.3);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(255, 136, 0, 0.5);
+      background: linear-gradient(45deg, #cc6a00, #a95400);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      h1 { font-size: 2.5rem; }
+      p { font-size: 1.1rem; }
+      .gear { width: 70px; height: 70px; }
+    }
+  </style>
 </head>
 <body>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <svg class="gear" viewBox="0 0 512 512" fill="#ffb84d" xmlns="http://www.w3.org/2000/svg">
+    <path d="M487.4 315.7l-38.4-22.2c1.3-9 2-18.3 2-27.5s-.7-18.5-2-27.5l38.4-22.2c5.9-3.4 8.5-10.3 6.3-16.7l-36.2-99.5c-2.2-6.3-8.2-10.1-14.8-9.2l-43.7 6.3c-7.1-5.3-14.5-10.2-22.2-14.5l-6.6-44.1c-1-6.6-6.7-11.6-13.3-11.6h-105c-6.6 0-12.3 5-13.3 11.6l-6.6 44.1c-7.7 4.3-15.1 9.2-22.2 14.5l-43.7-6.3c-6.6-.9-12.6 2.9-14.8 9.2l-36.2 99.5c-2.2 6.3.4 13.3 6.3 16.7l38.4 22.2c-1.3 9-2 18.3-2 27.5s.7 18.5 2 27.5l-38.4 22.2c-5.9 3.4-8.5 10.3-6.3 16.7l36.2 99.5c2.2 6.3 8.2 10.1 14.8 9.2l43.7-6.3c7.1 5.3 14.5 10.2 22.2 14.5l6.6 44.1c1 6.6 6.7 11.6 13.3 11.6h105c6.6 0 12.3-5 13.3-11.6l6.6-44.1c7.7-4.3 15.1-9.2 22.2-14.5l43.7 6.3c6.6.9 12.6-2.9 14.8-9.2l36.2-99.5c2.3-6.3-.3-13.3-6.2-16.7zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z"/>
+  </svg>
 
-  <header id="home">
-    <h1>MatteDev</h1>
-    <p class="subtitle">Passionate developer and system builder</p>
-  </header>
+  <h1>In Manutenzione</h1>
+  <p>Stiamo lavorando per migliorare il sito.<br>Torna presto per scoprire le novità!</p>
 
-  <main class="home-main">
-    <section class="about">
-      <h2>About Me</h2>
-      <p>Hi! I'm Matteo, a developer that loves building systems and solving problems trough code. I do web apps for everyday use and i also do custom projects on request.</p>
-        <div class="skills">
-      <span>Python</span>
-        <span>C</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Bash</span>
-        <span>Assembly</span>
-        <span>Batch</span>
-      </div>
-    </section>
+  <a href="/" class="btn">Torna alla Home</a>
 
-<section class="cta-section">
-  <h2>Custom Projects</h2>
-  <p>Do you need custom applications or websites tailored to your needs? We design and develop solutions that perfectly fit your vision, whether it's a sleek web app, a mobile platform, or a full-stack project.</p>
-  <p>Every project is unique and built with attention to detail, performance, and user experience.</p>
-        <a href="mailto:matte.abate@outlook.it" class="contact-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-          </svg>
-    Contact Me
-  </a>
-</section>
+    <p style="margin-top: 1.5rem; color: #aaa; font-size: 1rem;">
+    serve aiuto? <a href="mailto:support@mattedev.com" style="color:#ffb84d; text-decoration:none;">Contatta il Supporto</a>
+  </p>
 
 
 
 
-    <section class="cta-section">
-      <h2>Explore My Work</h2>
-      <p>Discover the projects I've built, from chat platforms to weather apps and mini utilities.</p>
-      <a href="projects.html" class="cta-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-        </svg>
-        View Projects
-      </a>
-    </section>
+  
+  <h1>Under Maintenance</h1>
+  <p>We’re working hard to improve the site.<br>Check back soon to see what’s new!</p>
 
-    <section class="contact-section" id="contact">
-      <h2>Get In Touch</h2>
-      <p>Let's connect and collaborate on exciting projects!</p>
-      <div class="contact-links">
-        <a href="mailto:matte.abate@outlook.it" class="contact-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-          </svg>
-          Email Me
-        </a>
-        <a href="https://github.com/hi-its-matte" target="_blank" class="contact-btn github">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-          GitHub
-        </a>
-      </div>
-    </section>
-  </main>
+  <a href="/" class="btn">Back to Home</a>
 
-  <footer>
-    <p>© Matteo Abate • 2025</p>
-    <p>Building the future, one line of code at a time.</p>
-    <a href="tos.html">Terms of Service</a> |
-    <a href="privacy.html">Privacy Policy</a>
+  <p style="margin-top: 1.5rem; color: #aaa; font-size: 1rem;">
+    Need help? <a href="mailto:support@mattedev.com" style="color:#ffb84d; text-decoration:none;">Contact Support</a>
+  </p>
 
-    <a href='https://ko-fi.com/mattedev' target='_blank'>
-      <img height='36' style='border:0px;height:36px;'
-      src='https://storage.ko-fi.com/cdn/kofi5.png?v=6'
-      alt='Buy Me a Coffee at ko-fi.com' />
-    </a>
 
-  </footer>
 </body>
 </html>
