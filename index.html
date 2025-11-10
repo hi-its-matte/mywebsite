@@ -1,125 +1,75 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sito in Manutenzione</title>
-  <style>
-    /* --- Base Style (stesso schema del tuo style.css senza blu) --- */
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0d0d0d;
-      color: #f2f2f2;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
-      overflow: hidden;
-    }
-
-    h1 {
-      font-size: 3.5rem;
-      margin: 0;
-      background: linear-gradient(45deg, #ff8800, #ffb84d);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: glow 3s ease-in-out infinite;
-    }
-
-    @keyframes glow {
-      0%, 100% { text-shadow: 0 0 20px rgba(255, 136, 0, 0.3); }
-      50% { text-shadow: 0 0 40px rgba(255, 184, 77, 0.6); }
-    }
-
-    p {
-      color: #ccc;
-      font-size: 1.3rem;
-      margin: 1.5rem 0 2rem;
-      max-width: 600px;
-      line-height: 1.6;
-    }
-
-    .gear {
-      width: 90px;
-      height: 90px;
-      margin-bottom: 1.5rem;
-      animation: rotate 5s linear infinite;
-      filter: drop-shadow(0 0 10px rgba(255, 136, 0, 0.4));
-    }
-
-    @keyframes rotate {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem 2.5rem;
-      background: linear-gradient(45deg, #ff8800, #cc6a00);
-      color: white;
-      text-decoration: none;
-      border-radius: 50px;
-      font-weight: bold;
-      font-size: 1.1rem;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(255, 136, 0, 0.3);
-    }
-
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(255, 136, 0, 0.5);
-      background: linear-gradient(45deg, #cc6a00, #a95400);
-    }
-
-    footer {
-      position: absolute;
-      bottom: 20px;
-      color: #777;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 700px) {
-      h1 { font-size: 2.5rem; }
-      p { font-size: 1.1rem; }
-      .gear { width: 70px; height: 70px; }
-    }
-  </style>
+  <link rel="icon" href="media.mattedev.com/img/mlogo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="style.css">
+  <title>MatteDev - Developer</title>
 </head>
 <body>
-  <svg class="gear" viewBox="0 0 512 512" fill="#ffb84d" xmlns="http://www.w3.org/2000/svg">
-    <path d="M487.4 315.7l-38.4-22.2c1.3-9 2-18.3 2-27.5s-.7-18.5-2-27.5l38.4-22.2c5.9-3.4 8.5-10.3 6.3-16.7l-36.2-99.5c-2.2-6.3-8.2-10.1-14.8-9.2l-43.7 6.3c-7.1-5.3-14.5-10.2-22.2-14.5l-6.6-44.1c-1-6.6-6.7-11.6-13.3-11.6h-105c-6.6 0-12.3 5-13.3 11.6l-6.6 44.1c-7.7 4.3-15.1 9.2-22.2 14.5l-43.7-6.3c-6.6-.9-12.6 2.9-14.8 9.2l-36.2 99.5c-2.2 6.3.4 13.3 6.3 16.7l38.4 22.2c-1.3 9-2 18.3-2 27.5s.7 18.5 2 27.5l-38.4 22.2c-5.9 3.4-8.5 10.3-6.3 16.7l36.2 99.5c2.2 6.3 8.2 10.1 14.8 9.2l43.7-6.3c7.1 5.3 14.5 10.2 22.2 14.5l6.6 44.1c1 6.6 6.7 11.6 13.3 11.6h105c6.6 0 12.3-5 13.3-11.6l6.6-44.1c7.7-4.3 15.1-9.2 22.2-14.5l43.7 6.3c6.6.9 12.6-2.9 14.8-9.2l36.2-99.5c2.3-6.3-.3-13.3-6.2-16.7zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z"/>
-  </svg>
+  <nav>
+    <div class="nav-logo">MatteDev</div>
+    <div class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-  <h1>In Manutenzione</h1>
-  <p>Stiamo lavorando per migliorare il sito.<br>Torna presto per scoprire le novità!</p>
+  <header id="home">
+    <div class="header-text">
+      <h1>MatteDev</h1>
+      <p>Developer. System builder. Tech explorer.</p>
+      <a href="#contact" class="btn-primary">Work With Me</a>
+    </div>
+    <div class="header-image">
+      <img src="https://media.mattedev.com/img/mlogo.jpg" alt="MatteDev Logo">
+    </div>
+  </header>
 
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Matteo, a developer passionate about building systems, web apps, and custom tools. I craft clean, fast, and scalable solutions.</p>
+      <div class="skills">
+        <span>Python</span>
+        <span>C</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Bash</span>
+        <span>Assembly</span>
+        <span>Batch</span>
+      </div>
+    </section>
 
+    <section class="highlights">
+      <div class="highlight-card">
+        <h3>Custom Projects</h3>
+        <p>I create apps and platforms tailored to your needs, from web apps to full-stack solutions.</p>
+        <a href="mailto:official@mattedev.com" class="btn-primary">Contact Me</a>
+      </div>
+      <div class="highlight-card">
+        <h3>Explore My Work</h3>
+        <p>Check out projects including utilities, websites, and experimental apps.</p>
+        <a href="projects.html" class="btn-primary">View Projects</a>
+      </div>
+    </section>
 
-    <p style="margin-top: 1.5rem; color: #aaa; font-size: 1rem;">
-    serve aiuto? <a href="mailto:support@mattedev.com" style="color:#ffb84d; text-decoration:none;">Contatta il Supporto</a>
-  </p>
+    <section class="contact-section" id="contact">
+      <h2>Get In Touch</h2>
+      <p>Let's collaborate on exciting projects and ideas!</p>
+      <div class="contact-links">
+        <a href="mailto:official@mattedev.com" class="btn-secondary">Email</a>
+        <a href="https://github.com/hi-its-matte" target="_blank" class="btn-secondary">GitHub</a>
+      </div>
+    </section>
+  </main>
 
-
-
-
-  
-  <h1>Under Maintenance</h1>
-  <p>We’re working hard to improve the site.<br>Check back soon to see what’s new!</p>
-
-
-
-  <p style="margin-top: 1.5rem; color: #aaa; font-size: 1rem;">
-    Need help? <a href="mailto:support@mattedev.com" style="color:#ffb84d; text-decoration:none;">Contact Support</a>
-  </p>
-
-
+  <footer>
+    <p>© MatteDev • 2025</p>
+    <p>Building the future, one line of code at a time.</p>
+  </footer>
 </body>
 </html>
-
