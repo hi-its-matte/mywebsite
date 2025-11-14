@@ -328,3 +328,13 @@ footer {
     width: 200px;
   }
 }
+section {
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
