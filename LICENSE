@@ -1,44 +1,21 @@
-Matteo Abate Website License (MAWL) v1.0  
-Copyright (c) 2025 Matteo Abate
+MIT License
 
-Permission is hereby granted, free of charge, to any person obtaining a copy  
-of this website and its associated files (the "Website"), to use, modify,  
-and distribute the Website, subject to the following conditions:
+Copyright (c) 2025 MatteDev
 
-1. Attribution  
-   a. All versions of the Website, whether original or modified, must include  
-      clear and visible attribution on every public-facing page to:  
-      - Matteo Abate  
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-   b. These credits must be:  
-      - Clearly legible  
-      - Not hidden, obfuscated, or minimized  
-      - Present regardless of the device or screen size  
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-2. Preservation of Attribution  
-   a. If the Website is modified and redistributed (in whole or in part), the  
-      credits to Matteo Abate must be preserved in their original form on all pages.  
-   b. Additional credits may be added, but original credits must not be  
-      removed, altered, or replaced.  
-
-3. No Removal of Credits  
-   a. Under no circumstance may any person or organization remove, hide,  
-      obscure, or replace the name of Matteo Abate from any version of the Website.  
-
-4. Disclaimer of Warranty  
-   The Website is provided "as is", without warranty of any kind, express or  
-   implied, including but not limited to the warranties of merchantability,  
-   fitness for a particular purpose and noninfringement. In no event shall the  
-   author or copyright holder be liable for any claim, damages or other  
-   liability, whether in an action of contract, tort or otherwise, arising from,  
-   out of or in connection with the Website or the use or other dealings in the Website.  
-
-5. Optional Notices  
-   It is recommended (but not mandatory) that modified versions include a note  
-   indicating the name or organization responsible for the modification.  
-
----
-
-This license may be reproduced and included with all copies or substantial  
-portions of the Website. For questions or permission beyond this license,  
-please contact: matte.abate@outlook.it
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
