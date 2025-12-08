@@ -84,7 +84,7 @@ header {
 }
 
 /* --------------------*/
-/*   BUTTONS            */
+/*     BUTTONS          */
 /* --------------------*/
 .btn-primary,
 .btn-secondary {
@@ -117,7 +117,7 @@ header {
 }
 
 /* --------------------*/
-/*    ABOUT SECTION     */
+/*     ABOUT SECTION    */
 /* --------------------*/
 .about {
   max-width: 1200px;
@@ -156,7 +156,7 @@ header {
   padding: 4rem 2rem;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .highlight-card {
@@ -165,6 +165,8 @@ header {
   border-radius: 20px;
   text-align: center;
   transition: 0.3s;
+  overflow: visible;
+  position: relative;
 }
 
 .highlight-card:hover {
@@ -175,10 +177,31 @@ header {
 .highlight-card h3 {
   font-size: 1.6rem;
   color: #6c63ff;
+  margin-bottom: 1rem;
+}
+
+.highlight-card p {
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.highlight-card a.btn-primary {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: white;
+  background: #6c63ff;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.highlight-card a.btn-primary:hover {
+  background: #5750d6;
 }
 
 /* --------------------*/
-/*     CONTACT          */
+/*    CONTACT SECTION   */
 /* --------------------*/
 .contact-section {
   padding: 4rem 2rem 5rem;
@@ -207,9 +230,26 @@ footer {
 }
 
 /* --------------------*/
+/*      RESPONSIVE      */
+/* --------------------*/
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-image img {
+    width: 200px;
+  }
+
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------*/
 /*     PROJECTS PAGE    */
 /* --------------------*/
-
 .projects-header {
   text-align: center;
   padding: 3rem 2rem;
@@ -246,6 +286,7 @@ footer {
   border-radius: 20px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.5);
   transition: 0.3s;
+  position: relative;
 }
 
 .project:hover {
@@ -292,7 +333,9 @@ footer {
   gap: 0.6rem;
 }
 
-/* Blocked project overlay */
+/* --------------------*/
+/* BLOCKED PROJECT OVERLAY */
+/* --------------------*/
 .blocked-project {
   position: relative;
 }
@@ -308,33 +351,15 @@ footer {
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.blocked-project.show-overlay .overlay {
+  opacity: 1;
 }
 
 /* Mini projects */
 .project.mini {
   padding: 1.5rem;
-}
-
-/* --------------------*/
-/*      RESPONSIVE      */
-/* --------------------*/
-@media (max-width: 900px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .header-image img {
-    width: 200px;
-  }
-}
-section {
-  text-align: center;
-}
-
-.contact-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
 }
