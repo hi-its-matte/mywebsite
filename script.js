@@ -1,24 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // --------------------
+  // LINK WHATSAPP
+  // --------------------
+  const joinBtn = document.getElementById("join-btn");
+
+  if (joinBtn) {
+    const { f, g, a, b, c, d, e } = joinBtn.dataset;
+    const whatsappLink = `${f}${g}${a}${b}${c}${d}${e}`;
+
+    joinBtn.href = whatsappLink;
+    joinBtn.target = "_blank"; // apre in nuova scheda
+    joinBtn.rel = "noopener noreferrer"; // sicurezza
+  }
+
+  // --------------------
+  // BLOCCO PROGETTI
+  // --------------------
   const blockedProjects = document.querySelectorAll(".blocked-project");
 
   blockedProjects.forEach(project => {
     const buttons = project.querySelectorAll("a, button");
-    
-    // Disattiva click e focus
+
     buttons.forEach(btn => {
-      btn.setAttribute("disabled", "disabled");
+      btn.disabled = true;
       btn.setAttribute("aria-disabled", "true");
       btn.tabIndex = -1;
       btn.addEventListener("click", e => e.preventDefault());
     });
 
-    // Mostra overlay al passaggio del mouse
-    project.addEventListener("mouseenter", () => {
-      project.classList.add("show-overlay");
-    });
-    project.addEventListener("mouseleave", () => {
-      project.classList.remove("show-overlay");
-    });
+    project.addEventListener("mouseenter", () => project.classList.add("show-overlay"));
+    project.addEventListener("mouseleave", () => project.classList.remove("show-overlay"));
   });
 });
-       
