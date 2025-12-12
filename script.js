@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const joinBtn = document.getElementById("join-btn");
 
   if (joinBtn) {
-    const { f, g, a, b, c, d, e } = joinBtn.dataset;
-    const whatsappLink = `${f}${g}${a}${b}${c}${d}${e}`;
+    const { f, h, g, a, b, c, d, e } = joinBtn.dataset;
+    const whatsappLink = `${f}${h}${g}${a}${b}${c}${d}${e}`;
 
     joinBtn.href = whatsappLink;
     joinBtn.target = "_blank"; // apre in nuova scheda
