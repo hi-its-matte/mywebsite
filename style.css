@@ -33,9 +33,7 @@ nav {
 .nav-logo {
   font-size: 1.6rem;
   font-weight: 700;
-  background: linear-gradient(90deg, #6c63ff, #9f94ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 }
 
 .nav-links a {
@@ -65,10 +63,8 @@ header {
 }
 
 .header-text h1 {
-  font-size: 4rem;
-  background: linear-gradient(90deg, #6c63ff, #9f94ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+  color: white;
 }
 
 .header-text p {
@@ -80,7 +76,7 @@ header {
 .header-image img {
   width: 280px;
   border-radius: 20px;
-  box-shadow: 0 0 40px rgba(108, 99, 255, 0.3);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
 }
 
 /* --------------------*/
@@ -98,22 +94,22 @@ header {
 }
 
 .btn-primary {
-  background: linear-gradient(90deg, #6c63ff, #9f94ff);
-  color: #fff;
+  background: #F8F8FF;
+  color: #333;
 }
 
 .btn-primary:hover {
-  box-shadow: 0 7px 22px rgba(108, 99, 255, 0.4);
+  box-shadow: 0 7px 22px rgba(248, 248, 255, 0.4);
   transform: translateY(-3px);
 }
 
 .btn-secondary {
-  background: #1a1a2e;
-  color: #6c63ff;
+  background: #F8F8FF;
+  color: #333;
 }
 
 .btn-secondary:hover {
-  background: #2a2a50;
+  background: #E8E8FF;
 }
 
 /* --------------------*/
@@ -124,6 +120,7 @@ header {
   margin: auto;
   padding: 4rem 2rem;
   text-align: center;
+  background: #0f0f0f;
 }
 
 .about h2 {
@@ -140,10 +137,10 @@ header {
 }
 
 .skills span {
-  background: #1a1a2e;
+  background: #333;
   padding: 0.4rem 1rem;
   border-radius: 20px;
-  color: #9f94ff;
+  color: white;
   font-size: 0.95rem;
 }
 
@@ -157,6 +154,7 @@ header {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background: #0f0f0f;
 }
 
 .highlight-card {
@@ -171,12 +169,12 @@ header {
 
 .highlight-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(108, 99, 255, 0.25);
+  box-shadow: 0 10px 30px rgba(102, 102, 102, 0.25);
 }
 
 .highlight-card h3 {
   font-size: 1.6rem;
-  color: #6c63ff;
+  color: white;
   margin-bottom: 1rem;
 }
 
@@ -190,14 +188,14 @@ header {
   padding: 0.8rem 1.5rem;
   margin-top: 1rem;
   text-decoration: none;
-  color: white;
-  background: #6c63ff;
+  color: #333;
+  background: #F8F8FF;
   border-radius: 10px;
   transition: 0.2s;
 }
 
 .highlight-card a.btn-primary:hover {
-  background: #5750d6;
+  background: #E8E8FF;
 }
 
 /* --------------------*/
@@ -206,6 +204,7 @@ header {
 .contact-section {
   padding: 4rem 2rem 5rem;
   text-align: center;
+  background: #0f0f0f;
 }
 
 .contact-section h2 {
@@ -217,6 +216,19 @@ header {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+
+/* --------------------*/
+/*   PRIVACY SECTION    */
+/* --------------------*/
+.privacy-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #0f0f0f;
+}
+
+.privacy-section h2 {
+  font-size: 2.4rem;
 }
 
 /* --------------------*/
@@ -257,9 +269,7 @@ footer {
 
 .projects-header h1 {
   font-size: 3rem;
-  background: linear-gradient(90deg, #6c63ff, #9f94ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 }
 
 .projects-header p {
@@ -291,7 +301,7 @@ footer {
 
 .project:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(108,99,255,0.3);
+  box-shadow: 0 10px 25px rgba(102, 102, 102, 0.3);
 }
 
 .project img {
@@ -302,7 +312,7 @@ footer {
 }
 
 .project h3 {
-  color: #6c63ff;
+  color: white;
   margin-bottom: 0.5rem;
   font-size: 1.4rem;
 }
@@ -320,10 +330,10 @@ footer {
 }
 
 .tech-stack span {
-  background: #1a1a2e;
+  background: #333;
   padding: 0.35rem 0.9rem;
   border-radius: 20px;
-  color: #9f94ff;
+  color: white;
   font-size: 0.9rem;
 }
 
