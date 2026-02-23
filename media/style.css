@@ -381,3 +381,129 @@ footer {
 .project.mini {
   padding: 1.5rem;
 }
+
+/* --------------------*/
+/*   PROJECTS TOPBAR    */
+/* --------------------*/
+.site-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 2rem;
+  background: linear-gradient(90deg, #141414 0%, #1b1b1f 100%);
+  border-bottom: 1px solid #242429;
+}
+
+.topbar-label {
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c4c7d1;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.topbar-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+  flex: 1;
+}
+
+.topbar-items a {
+  color: #e7eaf8;
+  text-decoration: none;
+  font-size: 0.92rem;
+  border: 1px solid #343847;
+  background: #1a1d28;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.topbar-items a:hover {
+  border-color: #cfd6ff;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.topbar-more {
+  text-decoration: none;
+  color: #111;
+  background: #f5f7ff;
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.topbar-more:hover {
+  background: #ffffff;
+}
+
+.projects-header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-header h1 {
+  font-size: 3.4rem;
+  letter-spacing: -0.03em;
+}
+
+.projects-header p {
+  max-width: 760px;
+  margin: 0.5rem auto 0;
+  font-size: 1.1rem;
+}
+
+.project {
+  border: 1px solid #1f1f24;
+}
+
+.project-links .btn-primary,
+.project-links .btn-secondary {
+  border-radius: 10px;
+  font-size: 0.92rem;
+  padding: 0.6rem 1rem;
+}
+
+@media (max-width: 900px) {
+  .site-topbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.9rem 1rem;
+  }
+
+  .topbar-items {
+    justify-content: flex-start;
+  }
+
+  .topbar-more {
+    text-align: center;
+  }
+}
+
+
+/* Professional polish for homepage */
+nav {
+  background: rgba(15, 15, 15, 0.92);
+  backdrop-filter: blur(10px);
+}
+
+.header-text h1 {
+  letter-spacing: -0.03em;
+}
+
+.header-text p {
+  max-width: 700px;
+}
+
+.about,
+.highlights,
+.contact-section {
+  border-top: 1px solid #1a1a1f;
+}
