@@ -1,137 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://media.mattedev.com/img/mlogo.jpg" type="image/jpeg">
-  <link rel="stylesheet" href="media/style.css">
-  <meta http-equiv="refresh" content="0; url=https://media.mattedev.com/maintenance/">
-  <title>MatteDev - Developer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questo è MatteDev</title>
+    <link rel="stylesheet" href="media/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="site-topbar" aria-label="Prodotti e piattaforme in evidenza">
-    <div class="topbar-label">MatteDev Ecosystem</div>
-    <div class="topbar-items">
-      <a href="https://store.mattedev.com" target="_blank" rel="noopener noreferrer">Matte Meteo</a>
-      <a href="https://store.mattedev.com" target="_blank" rel="noopener noreferrer">Cripty</a>
-      <a href="https://store.mattedev.com" target="_blank" rel="noopener noreferrer">BitShort</a>
-      <a href="https://store.mattedev.com" target="_blank" rel="noopener noreferrer">securePass</a>
-    </div>
-    <a class="topbar-more" href="https://store.mattedev.com" target="_blank" rel="noopener noreferrer">Scopri di più</a>
-  </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <nav>
+          <div class="nav-logo">MatteDev</div>
+          <div class="nav-links">
+          <a href="../index.html" class="active">Home</a>
+          <a href="pages/projects.html">Projects</a>
+          </div>
+        </nav>
+       <h1 class="hero-title">Questo è <span class="highlight">MatteDev</span></h1>
+    </section>
 
-  <nav>
-    <div class="nav-logo">MatteDev</div>
-    <div class="nav-links">
-      <a href="#home" class="active">Home</a>
-      <a href="pages/projects.html">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
 
-  <header id="home">
-    <div class="header-text">
-      <h1>MatteDev</h1>
-      <p>Soluzioni digitali professionali, sistemi su misura e prodotti orientati alla qualità.</p>
-      <a href="#contact" class="btn-primary">Richiedi una consulenza</a>
 
-            &nbsp;&nbsp;
 
-      <a href="https://github.com/hi-its-matte" target="_blank" class="github-link">
-            <svg height="56" width="56" viewBox="0 0 16 16" style="fill:white; vertical-align:middle; margin-right:5px;">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-            </svg>
-            <!--Nessun testo, solo icona.-->
+    <!-- Projects Section -->
+<section class="projects-section">
+    <div class="container">
+        <a href="pages/projects.html" class="project-card">
+            <div class="project-content">
+                <h2 class="project-title">I MIEI PROGETTI</h2>
+                <p class="project-subtitle">Clicca per esplorare</p>
+            </div>
+            <div class="project-image">
+                <img src="https://media.mattedev.com/img/website/banner2.png" alt="Progetti">
+            </div>
         </a>
-
     </div>
-    <div class="header-image">
-      <img src="https://media.mattedev.com/img/mlogo.jpg" alt="MatteDev Logo">
+</section>
+
+
+<section class="cards-section">
+    <div class="container">
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-content">In Costruzione<br> Coming Soon...</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">In costruzione <br> Coming Soon...</div>
+            </div>
+
+            <div class="card" style="flex-direction: column; text-align: center; padding: 20px;">
+                <div class="card-content">
+                    Unisciti al canale<br>whatsapp anonimo </div>
+                
+                <a id="join-btn"
+                   href="https://whatsapp.com/channel/0029VbB078e6BIEg3gfeuC28"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   onclick="event.stopPropagation();"> Iscriviti
+                </a>
+            </div>
+        </div>
     </div>
-  </header>
-
-  <main>
-    <section class="about">
-      <h2>Profilo Professionale</h2>
-      <p>Sono Matteo, sviluppatore software specializzato nella progettazione di applicazioni web, strumenti personalizzati e piattaforme scalabili con standard elevati di affidabilità.</p>
-      <div class="skills">
-        <span>Python</span>
-        <span>C</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Bash</span>
-        <span>Assembly</span>
-        <span>Batch</span>
-      </div>
-    </section>
-
-    <section class="highlights">
-      <div class="highlight-card">
-        <h3>Progetti su Misura</h3>
-        <p>Realizzo soluzioni personalizzate per aziende e professionisti, dal concept alla messa in produzione.</p>
-        <a href="mailto:official@mattedev.com" class="btn-primary">Parliamone</a>
-      </div>
-
-      <div class="highlight-card">
-        <h3>Portfolio e Prodotti</h3>
-        <p>Esplora una selezione curata di applicazioni, utility e prodotti digitali pubblicati da MatteDev.</p>
-        <a href="pages/projects.html" class="btn-primary">Esplora i progetti</a>
-      </div>
-    
-
-    
-      <div class="highlight-card">
-        <h3>Canale Aggiornamenti</h3>
-        <p>Ricevi aggiornamenti ufficiali su release, miglioramenti e nuovi prodotti (in italiano).</p>
-
-        <a id="join-btn" class="btn-primary"
-           data-a="chan" data-b="nel/0029" data-c="VbB0"
-           data-d="78e6BIEg" data-e="3gfeuC28"
-           data-f="https://wh" data-g="app.com/" data-h="ats">
-           
-          Iscriviti
-        </a>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <h2>Contatti</h2>
-      <p>Per collaborazioni professionali, consulenze o sviluppo prodotto, contattami direttamente.</p>
-      <div class="contact-links">
-        <a href="mailto:official@mattedev.com" class="btn-secondary">Email</a>
-        <a href="https://github.com/hi-its-matte" target="_blank" class="btn-secondary">GitHub</a>
-      </div>
-    </section>
-
-  
-    
-  </main>
+</section>
 
 
- <footer>
+    <!-- Footer -->
+     <footer class="footer">
     <p>© MatteDev • 2026</p>
-    <p>Building the future, one line of code at a time.</p>
-    
-    
-        <a href="https://github.com/hi-its-matte" target="_blank" class="github-link">
-            <svg height="24" width="24" viewBox="0 0 16 16" style="fill:white; vertical-align:middle; margin-right:5px;">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-            </svg>
-            <!--Nessun testo, solo icona.-->
-        </a>
-    
-
-    <div class="legal-links">
-      
-        <a href="mailto:official@mattedev.com" class="p">Email</a>
-        <a href="pages/privacy.html" target="_blank" class="p">Privacy Policy</a>
-        <a href="pages/tos.html" target="_blank" class="p">Terms of Service</a>
-     
-    </div>
-</footer>
-
-
+    <p>Costruendo il futuro, una riga di codice alla volta.</p>
+    <a href="pages/privacy.html">Privacy Policy</a> | <a href="pages/tos.html">Terms of Service</a>
+  </footer>
 </body>
-<script src="media/script.js"></script>
+
 </html>

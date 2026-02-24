@@ -1,29 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="media.mattedev.com/img/mlogo.jpg" type="image/jpeg">
-  <link rel="stylesheet" href="../media/style.css">
-  <title>Projects - MatteDev</title>
+  <link rel="stylesheet" href="../media/projects.css">
+  <title>Progetti - MatteDev</title>
 </head>
 <body>
-  <div class="site-topbar" aria-label="Progetti in evidenza">
-    <div class="topbar-label">In evidenza</div>
-    <div class="topbar-items">
-      <a href="https://store.mattedev.com" target="_blank" rel="noopener noreferrer">Matte Meteo</a>
-      <a href="https://store.mattedev.com" target="_blank" rel="noopener noreferrer">Cripty</a>
-      <a href="https://store.mattedev.com" target="_blank" rel="noopener noreferrer">Code Generator</a>
-    </div>
-    <a class="topbar-more" href="https://store.mattedev.com" target="_blank" rel="noopener noreferrer">Scopri di più</a>
-  </div>
+  
 
   <nav>
     <div class="nav-logo">MatteDev</div>
     <div class="nav-links">
       <a href="../index.html">Home</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="../index.html#contact">Contact</a>
+      <a href="projects.html" class="active">Progetti</a>
+      
     </div>
   </nav>
 
@@ -36,10 +28,10 @@
     <!-- Normal Projects: 3 per row -->
     <section class="projects-grid normal-projects">
       <article class="project blocked-project">
-        <img src="https://media.mattedev.com/img/aura/aurachat_icon.png" alt="Aura Chat logo">
+        <img src="https://media.mattedev.com/img/aura/aurachat_icon.png" alt="Logo Aura Chat">
         <h3>Aura Chat</h3>
-        <p class="in-dev">in development</p>
-        <p>Modern chat platform with real-time messaging and cross-platform support.</p>
+        <p class="in-dev">in sviluppo</p>
+        <p>Piattaforma di chat moderna con messaggistica in tempo reale e supporto multipiattaforma.</p>
         <div class="tech-stack">
           <span>HTML</span>
           <span>CSS</span>
@@ -52,13 +44,33 @@
           <a href="https://store.mattedev.com" target="_blank" rel="noopener noreferrer" class="btn-primary">MatteDev Store</a>
           <a href="#" class="btn-secondary">GitHub</a>
         </div>
-        <div class="overlay">In Development</div>
+        <div class="overlay">In Sviluppo</div>
       </article>
 
       <article class="project">
-        <img src="https://media.mattedev.com/img/mattemeteo/icon.ico" alt="Matte Meteo logo">
+        <h3>Account Manager</h3>
+        <p>L'account manager di tutti i servizi MatteDev.</p>
+        <div class="tech-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JS</span>
+        </div>
+        <div class="project-links">
+          <a href="https://account.mattedev.com" class="btn-primary">Visita</a>
+        <a href="https://github.com/hi-its-matte/account-manager" class="btn-secondary">GitHub</a>
+        </div>
+        
+      </article>
+    
+
+
+
+
+
+      <article class="project">
+        <img src="https://media.mattedev.com/img/mattemeteo/icon.ico" alt="Logo Matte Meteo">
         <h3>Matte Meteo</h3>
-        <p>Elegant weather app with forecasts, clean interface.</p>
+        <p>Elegante app meteo con previsioni e interfaccia pulita.</p>
         <div class="tech-stack">
           <span>HTML</span>
           <span>CSS</span>
@@ -74,92 +86,62 @@
       </article>
 
       <article class="project">
-        <img src="https://media.mattedev.com/img/cripty/icon.png" alt="Cripty logo">
+        <img src="https://media.mattedev.com/img/cripty/icon.png" alt="Logo Cripty">
         <h3>Cripty</h3>
-        <p>Simple application to protect YOUR files.</p>
+        <p>Semplice applicazione per proteggere i TUOI file.</p>
         <div class="tech-stack">
           <span>Python</span>
           <span>EXE</span>
           <span>Closed Source</span>
         </div>
         <div class="project-links">
-          <a href="https://cripty.mattedev.com" class="btn-primary">Website</a>
-          <a href="https://cripty.mattedev.com/#download" class="btn-primary">Download EXE</a>
+          <a href="https://cripty.mattedev.com" class="btn-primary">Sito Web</a>
+          <a href="https://cripty.mattedev.com/#download" class="btn-primary">Scarica EXE</a>
           <a href="https://store.mattedev.com" target="_blank" rel="noopener noreferrer" class="btn-primary">Scarica dal MatteDev Store</a>
           <a href="https://github.com/hi-its-matte/criptybymattedev_website" class="btn-secondary">GitHub</a>
         </div>
       </article>
 
       <article class="project">
-        <img src="https://media.mattedev.com/img/bitshort/logo.ico" alt="BitShort logo">
+        <img src="https://media.mattedev.com/img/bitshort/logo.ico" alt="Logo BitShort">
         <h3>BitShort</h3>
-        <p>Simple URL shortener.</p>
+        <p>Semplice abbreviatore di URL.</p>
         <div class="tech-stack">
           <span>JS</span>
           <span>HTML</span>
           <span>CSS</span>
         </div>
         <div class="project-links">
-          <a href="https://bitshort.mattedev.com/" class="btn-primary">Website</a>
+          <a href="https://bitshort.mattedev.com/" class="btn-primary">Sito Web</a>
           <a href="https://store.mattedev.com" target="_blank" rel="noopener noreferrer" class="btn-primary">Disponibile su MatteDev Store</a>
           <a href="https://github.com/hi-its-matte/bitshort" class="btn-secondary">GitHub</a>
         </div>
       </article>
 
-      <article class="project">
-        <h3>Sunet Project</h3>
-        <p>Simple Programming Language.</p>
-        <div class="tech-stack">
-          <span>Python</span>
-        </div>
-        <div class="project-links">
-          <a href="#" class="btn-primary">Website</a>
-          <a href="https://store.mattedev.com" target="_blank" rel="noopener noreferrer" class="btn-primary">Disponibile su MatteDev Store</a>
-          <a href="#" class="btn-secondary">GitHub</a>
-        </div>
-        
-      </article>
-    
 
-      <article class="project">
-        <img src="https://media.mattedev.com/img/securepass/icon.jpg" alt="BitShort logo">
+      <article class="project blocked-project">
+        <img src="https://media.mattedev.com/img/securepass/icon.jpg" alt="Logo securePass">
         <h3>securePass</h3>
-        <p>Simple Password manager.</p>
+        <p>Semplice gestore di password.</p>
+          <p class="in-dev">in manutenzione</p>
+
         <div class="tech-stack">
           <span>HTML</span>
           <span>CSS</span>
           <span>JS</span>
         </div>
         <div class="project-links">
-          <a href="#" class="btn-primary">Website</a>
+          <a href="#" class="btn-primary">Sito Web</a>
           <a href="https://store.mattedev.com" target="_blank" rel="noopener noreferrer" class="btn-primary">Disponibile su MatteDev Store</a>
           <a href="#" class="btn-secondary">GitHub</a>
         </div>
-        
+        <div class="overlay">In Manutenzione</div>
       </article>
     </section>
 
-    <!-- Mini / Experimental Projects: 1 per row -->
-    <section class="projects-grid mini-projects">
-      <article class="project mini">
-        <h3>Code Generator</h3>
-        <p>Python code generator for Windows.</p>
-        <div class="tech-stack">
-          <span>Python</span>
-          <span>Windows</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/hi-its-matte/codegenerator" class="btn-secondary">GitHub</a>
-          <a href="https://github.com/hi-its-matte/codegenerator/releases/download/1.0/passgenerator.exe" class="btn-primary">Download</a>
-          <a href="https://store.mattedev.com" target="_blank" rel="noopener noreferrer" class="btn-primary">Scarica dal MatteDev Store</a>
-        </div>
-      </article>
-    </section>
-  </main>
+   
 
-  <footer>
-    <p>© MatteDev • 2026</p>
-    <p>Building the future, one line of code at a time.</p>
-  </footer>
+
+
 </body>
 </html>
