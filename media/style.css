@@ -42,6 +42,8 @@ nav {
     max-width: 900px;
     z-index: 1000;
     background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.15);
     color: #ffffff;
     padding: 18px 40px;
@@ -152,8 +154,8 @@ nav:hover {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    
     position: relative;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -167,6 +169,29 @@ nav:hover {
     font-weight: 300;
     color: #ffffff;
     letter-spacing: 1px;
+    line-height: 1.4;
+    text-align: center;
+    padding: 20px;
+}
+
+#join-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+#join-btn:hover {
+    background: #ffffff;
+    color: #000000;
+    transform: translateY(-2px);
 }
 
 /* Projects Section */
@@ -238,73 +263,14 @@ nav:hover {
 .footer {
     width: 100%;
     padding: 80px 0;
-
-    background: linear-gradient(
-        180deg,
-        #0a0a0a 0%,
-        #000000 100%
-    );
-
+    background: linear-gradient(180deg, #0a0a0a 0%, #000000 100%);
     border-top: 1px solid rgba(255, 255, 255, 0.06);
-
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
+    text-align: center;
 }
 
-/* Responsive Design */
-@media (max-width: 968px) {
-    .navbar {
-        width: 85%;
-        padding: 16px 30px;
-    }
-
-    .cards-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
-    }
-
-    .project-card {
-        flex-direction: column;
-        padding: 50px;
-        gap: 50px;
-    }
-    
-    .project-content {
-        text-align: center;
-    }
-}
-
-@media (max-width: 640px) {
-    .container {
-        padding: 0 20px;
-    }
-
-    .navbar {
-        width: 90%;
-        top: 20px;
-        padding: 14px 24px;
-        font-size: 13px;
-    }
-
-    .cards-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-
-    .project-card {
-        padding: 40px 30px;
-        border-radius: 40px;
-        gap: 40px;
-    }
-
-    .card {
-        border-radius: 30px;
-    }
-
-    .hero-title {
-        letter-spacing: -2px;
-    }
-}a {
+a {
     color: #ffffff;
     text-decoration: none;
 }
@@ -312,48 +278,355 @@ nav:hover {
 a:hover {
     color: #e0e0e0;
 }
-/* Forza il pulsante a capo */
-/* Questa regola dice alla card di incolonnare il contenuto */
-/* ... (tutto il resto del tuo codice sopra rimane uguale) ... */
 
-.card {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 40px;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden; /* Evita che roba esca fuori */
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE FRIENDLY
+   ============================================ */
+
+/* Tablet (768px - 968px) */
+@media (max-width: 968px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    nav {
+        width: 85%;
+        padding: 16px 30px;
+        top: 30px;
+    }
+
+    .nav-logo {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        gap: 24px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 100px 20px 40px;
+    }
+
+    .cards-section,
+    .projects-section {
+        padding: 80px 0;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+
+    .card-content {
+        font-size: 22px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        padding: 50px;
+        gap: 50px;
+        border-radius: 40px;
+    }
+    
+    .project-content {
+        text-align: center;
+    }
+
+    .project-title {
+        letter-spacing: 2px;
+    }
+
+    .project-subtitle {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 60px 0;
+    }
 }
 
-/* Modifica specifica per la card che deve contenere il tasto */
-.card-content {
-    font-size: 26px;
-    font-weight: 300;
-    color: #ffffff;
-    letter-spacing: 1px;
-    line-height: 1.4; /* Migliora la resa quando vai a capo con <br> */
+/* Mobile Large (481px - 640px) */
+@media (max-width: 640px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    nav {
+        width: 90%;
+        top: 20px;
+        padding: 14px 24px;
+        border-radius: 30px;
+    }
+
+    .nav-logo {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 120px 20px 40px;
+        min-height: 90vh;
+    }
+
+    .hero-title {
+        letter-spacing: -2px;
+        margin-bottom: 16px;
+    }
+
+    .cards-section,
+    .projects-section {
+        padding: 60px 0;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .card {
+        border-radius: 30px;
+        min-height: 280px;
+    }
+
+    .card-content {
+        font-size: 20px;
+        padding: 30px 20px;
+    }
+
+    #join-btn {
+        padding: 10px 24px;
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    .project-card {
+        padding: 40px 30px;
+        border-radius: 30px;
+        gap: 40px;
+    }
+
+    .project-title {
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+    }
+
+    .project-subtitle {
+        font-size: 15px;
+    }
+
+    .project-image img {
+        border-radius: 20px;
+    }
+
+    .footer {
+        padding: 50px 0;
+        font-size: 13px;
+    }
 }
 
-#join-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 30px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    font-size: 16px;
+/* Mobile Small (max 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    nav {
+        width: calc(100% - 32px);
+        padding: 12px 20px;
+        top: 16px;
+        border-radius: 25px;
+    }
+
+    .nav-logo {
+        font-size: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    /* Nasconde l'underline su mobile molto piccoli */
+    .nav-links a::after {
+        display: none;
+    }
+
+    .hero {
+        padding: 100px 16px 30px;
+    }
+
+    .hero-title {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+        letter-spacing: -1px;
+    }
+
+    .cards-section,
+    .projects-section {
+        padding: 50px 0;
+    }
+
+    .cards-grid {
+        gap: 20px;
+    }
+
+    .card {
+        border-radius: 25px;
+        min-height: 260px;
+    }
+
+    .card-content {
+        font-size: 18px;
+        padding: 25px 16px;
+        letter-spacing: 0.5px;
+    }
+
+    #join-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+        margin-top: 12px;
+    }
+
+    .project-card {
+        padding: 30px 20px;
+        border-radius: 25px;
+        gap: 30px;
+    }
+
+    .project-title {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+        letter-spacing: 0.5px;
+    }
+
+    .project-subtitle {
+        font-size: 14px;
+    }
+
+    .project-image img {
+        border-radius: 16px;
+    }
+
+    .footer {
+        padding: 40px 0;
+        font-size: 12px;
+    }
 }
 
-#join-btn:hover {
-    background: #ffffff;
-    color: #000000;
-    transform: translateY(-2px);
+/* Mobile Extra Small (max 360px) */
+@media (max-width: 360px) {
+    nav {
+        width: calc(100% - 24px);
+        padding: 10px 16px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        font-size: 11px;
+    }
+
+    .hero-title {
+        font-size: clamp(2rem, 12vw, 3rem);
+    }
+
+    .card {
+        min-height: 240px;
+    }
+
+    .card-content {
+        font-size: 16px;
+        padding: 20px 12px;
+    }
+
+    #join-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .project-card {
+        padding: 24px 16px;
+        gap: 24px;
+    }
+}
+
+/* Landscape mode ottimizzazione */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 140px 20px 60px;
+    }
+
+    nav {
+        top: 16px;
+        padding: 10px 24px;
+    }
+
+    .cards-section,
+    .projects-section {
+        padding: 60px 0;
+    }
+}
+
+/* Touch device ottimizzazioni */
+@media (hover: none) and (pointer: coarse) {
+    /* Aumenta le aree cliccabili su touch devices */
+    .nav-links a {
+        padding: 8px 4px;
+    }
+
+    #join-btn {
+        padding: 14px 32px;
+        font-size: 15px;
+    }
+
+    /* Rimuove hover effects su touch */
+    nav:hover {
+        transform: translateX(-50%);
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .project-card:hover {
+        transform: none;
+    }
+
+    #join-btn:hover {
+        transform: none;
+    }
+}
+
+/* Migliora performance su dispositivi mobili */
+@media (max-width: 968px) {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Ottimizza le animazioni per mobile */
+    .card,
+    .project-card,
+    nav,
+    #join-btn {
+        will-change: transform;
+    }
 }
