@@ -1,19 +1,43 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>404 — Page Not Found</title>
-  <link rel="stylesheet" href="media/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Pagina non trovata | MatteDev</title>
+    <meta name="description" content="La pagina che stai cercando non esiste o è stata spostata. Torna alla home di MatteDev o visita i progetti.">
+    <link rel="stylesheet" href="media/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="/media/404.css" rel="stylesheet">
 </head>
 <body>
-  <main class="card" role="main" aria-labelledby="title">
-    <h1 id="title">404</h1>
-    <p class="lead"><strong>Page not found</strong> — the page you're looking for doesn't exist or has been moved.</p>
-    <div class="actions">
-      <a class="btn-primary" href="/" title="Go to homepage">Go to homepage</a>
-      <a class="btn-primary" href="javascript:history.back()" title="Go back">Go back</a>
-    </div>
-  </main>
+    <section class="error-page">
+        <nav>
+            <div class="nav-logo">MatteDev</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="pages/projects.html">Projects</a>
+            </div>
+        </nav>
+
+        <main class="error-panel">
+            <p class="error-code">Errore 404</p>
+            <h1 class="hero-title error-title"><span class="highlight">Pagina non trovata</span></h1>
+            <p class="error-text">
+                Il link che hai aperto non punta a una pagina valida. Può essere stato spostato, rinominato
+                oppure non essere mai esistito.
+            </p>
+            <div class="error-actions">
+                <a class="error-button primary" href="index.html">Torna alla Home</a>
+                <a class="error-button secondary" href="pages/projects.html">Vai ai Progetti</a>
+            </div>
+            <p class="error-hint">MatteDev continua da qui: scegli una destinazione e ripartiamo.</p>
+        </main>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; MatteDev • 2026</p>
+        <p>Costruendo il futuro, una riga di codice alla volta.</p>
+        <a href="pages/privacy.html">Privacy Policy</a> | <a href="pages/tos.html">Terms of Service</a>
+    </footer>
 </body>
-</html></div>
+</html>

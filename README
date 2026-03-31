@@ -1,13 +1,76 @@
-This is my personal website, where people can:
--Contact me
--Explore my public repositories and explore my projects
--The website is simple, clean, and lightweight, designed to offer quick access to my work and projects.
+# MatteDev Website
 
-🔧 Technologies Used
-HTML, CSS – for structure, styling, and interactivity
-Heroicons (SVG) – for icons and visual elements
-GitHub (pages) – for hosting
+Sito personale statico di MatteDev, pubblicato con GitHub Pages.
 
-Created By MatteDev
+Il progetto presenta una homepage essenziale, una sezione dedicata ai progetti e pagine informative di supporto.
 
-mattedev.com
+## Panoramica
+
+Questo sito e pensato per:
+
+- presentare il brand personale MatteDev
+- indirizzare i visitatori verso i progetti pubblici e open source
+- offrire una navigazione semplice, veloce e responsive
+- mantenere una struttura leggera basata solo su HTML e CSS
+
+## Struttura del progetto
+
+```text
+mywebsite/
+|- index.html
+|- 404.html
+|- CNAME
+|- LICENSE
+|- README
+|- media/
+|  |- style.css
+|  |- projects.css
+|  |- 404.jpg
+|- pages/
+|  |- projects.html
+|  |- privacy.html
+|  |- tos.html
+|  |- app_type/
+|     |- web.html
+|     |- native.html
+```
+
+## Tecnologie usate
+
+- HTML5
+- CSS3
+- Google Fonts (`Montserrat`)
+- GitHub Pages per l'hosting
+
+## Pagine principali
+
+- `index.html`: homepage del sito
+- `404.html`: pagina di errore
+- `pages/projects.html`: raccolta dei progetti
+- `pages/privacy.html`: informativa privacy
+- `pages/tos.html`: termini di servizio
+
+## Design
+
+La UI segue una direzione visiva moderna:
+
+- sfondi scuri con gradienti
+- card traslucide con effetto glass
+- layout responsive per desktop, tablet e mobile
+- navigazione minimale con accesso rapido alle sezioni principali
+
+## Deploy
+
+Il sito e progettato per essere distribuito come static site su GitHub Pages.
+
+Il file `CNAME` indica il dominio personalizzato associato al progetto (MatteDev.com).
+
+## Obiettivo del repository
+
+Questo repository raccoglie il codice sorgente del sito ufficiale di MatteDev e funge da base per aggiornamenti futuri, nuove sezioni e miglioramenti grafici.
+
+## Autore
+
+Creato da MatteDev
+
+Website: `mattedev.com`
