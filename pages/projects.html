@@ -1,57 +1,144 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="media.mattedev.com/img/mlogo.jpg" type="image/jpeg">
-  <link rel="stylesheet" href="../media/style.css">
-  <title>Progetti - MatteDev</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatteDev Studio - Progetti</title>
+    <meta name="description" content="Scopri tutti i progetti MatteDev: app, software e servizi.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/media/style.css">
+
+    
 </head>
-<body class="projects-page">
-  
+<body>
+<div class="page-shell">
 
-  <nav>
-    <div class="nav-logo">MatteDev</div>
-    <div class="nav-links">
-      <a href="../index.html">Home</a>
-      <a href="projects.html" class="active">Progetti</a>
-      <a href="mailto:official@mattedev.com">Contatti</a>
-      
+    <nav class="site-nav">
+        <div class="nav-logo">MatteDev Studio</div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="projects.html" class="active">I nostri Progetti</a>
+            <a href="staff.html">Staff & Partners</a>
+            <a href="mailto:official@mattedev.com">Contatti</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="card-kicker">MatteDev Ecosystem</p>
+                <h1>Tutti i nostri progetti, in un unico posto.</h1>
+                <p>Dalle app web ai software nativi: esplora tutto ciò che costruiamo per semplificare, proteggere e migliorare il mondo digitale.</p>
+
+                <div class="hero-notes">
+                    <span>Web Apps</span>
+                    <span>Software</span>
+                    <span>100% Open Source</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLATFORM -->
+        <section class="projects-section">
+    <div class="project-card highlight-card">
+        <div class="project-copy">
+            <p class="card-kicker">HYBRID APP</p>
+            <h2>MatteDev Platform</h2>
+            <p>
+                Un hub progettato per semplificare il tuo flusso di lavoro. 
+                Accedi ai servizi MatteDev, gestisci le tue applicazioni e lavora 
+                in modo più efficiente grazie a un’esperienza unificata, veloce e intuitiva.
+            </p>
+        </div>
+
+        <div class="project-actions">
+            <a href="https://github.com/hi-its-matte/mdev-platform/releases/download/1.0/Platform.Setup.exe" class="project-arrow">Download Windows</a>
+            <a href="https://platform.mattedev.com" class="project-arrow">Apri sul Web</a>
+        </div>
     </div>
-  </nav>
-
-  <header class="projects-header">
-    <h1>Portfolio Progetti</h1>
-    <p>Una selezione professionale di prodotti digitali, applicazioni e strumenti realizzati da MatteDev.</p>
-  </header>
-
-  <main class="projects-main">
-
-  <section class="projects-categories">
-
-    <article class="project">
-      <h2>App Web</h2>
-      <p>Applicazioni web accessibili dal browser.</p>
-      <a href="app_type/web.html" class="btn-primary">Visita</a>
-    </article>
-    <br>
-
-    <article class="project">
-      <h2>App Native</h2>
-      <p>Applicazioni installabili su PC o mobile.</p>
-      <a href="app_type/native.html" class="btn-primary">Visita</a>
-    </article>
-<br>
-    <article class="project">
-      <h2>Boards</h2>
-      <p>Progetti per Arduino, ESP e altre boards.</p>
-      <a href="https://boards.mattedev.com" class="btn-primary" target="_blank">Visita</a>
-    </article>
-
-  </section>
-   
+</section>
 
 
+        <!-- CRIPTY -->
+        <section class="projects-section">
+            <a href="https://cripty.mattedev.com" class="project-card highlight-card">
+                <div class="project-copy">
+                    <p class="card-kicker">NATIVE APP</p>
+                    <h2>Cripty</h2>
+                    <p>Proteggi i tuoi file con crittografia avanzata. Sicurezza, velocità e semplicità in un’unica applicazione.</p>
+                </div>
+                <span class="project-arrow">Apri sito</span>
+            </a>
+        </section>
 
+        <!-- METEO -->
+        <section class="projects-section">
+    <div class="project-card">
+        <div class="project-copy">
+            <p class="card-kicker">HYBRID APP</p>
+            <h2>Matte Meteo</h2>
+            <p>
+                Un’esperienza meteo moderna disponibile su Web e Android. 
+                Design pulito e dati sempre aggiornati.
+            </p>
+        </div>
+
+        <div class="project-actions">
+            <a href="https://github.com/hi-its-matte/matte_meteo/releases/download/1.2/mattemeteoapp.apk" class="project-arrow">Download Android</a>
+            <a href="https://meteo.mattedev.com" class="project-arrow">Apri sul Web</a>
+        </div>
+    </div>
+</section>
+
+        <!-- QUILL -->
+        <section class="projects-section">
+            <a href="https://quill.mattedev.com" class="project-card">
+                <div class="project-copy">
+                    <p class="card-kicker">WEB APP</p>
+                    <h2>Quill</h2>
+                    <p>Editor di testo moderno, veloce e open source. Scrivi senza distrazioni.</p>
+                </div>
+                <span class="project-arrow">Visita</span>
+            </a>
+        </section>
+
+        <!-- BITSHORT -->
+        <section class="projects-section">
+            <a href="https://bitshort.mattedev.com" class="project-card">
+                <div class="project-copy">
+                    <p class="card-kicker">WEB TOOL</p>
+                    <h2>BitShort</h2>
+                    <p>Accorcia i tuoi link in modo semplice, veloce ed efficace.</p>
+                </div>
+                <span class="project-arrow">Vai</span>
+            </a>
+        </section>
+
+        <!-- AURA -->
+        <section class="projects-section">
+            <div class="project-card disabled">
+                <div class="project-copy">
+                    <p class="card-kicker">IN SVILUPPO</p>
+                    <h2>Aura Chat</h2>
+                    <p>La nuova piattaforma di comunicazione firmata MatteDev. In arrivo.</p>
+                </div>
+                <span class="project-arrow">Coming Soon</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; MatteDev Studio &bull; 2026</p>
+        <p>Innovazione costante, una riga di codice alla volta.</p>
+    </footer>
+
+</div>
 </body>
 </html>
