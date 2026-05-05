@@ -1125,3 +1125,144 @@ main {
         .staff-card { background: rgba(255,255,255,0.05); padding: 25px; border-radius: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.1); }
         .staff-card img { width: 80px; height: 80px; border-radius: 50%; margin-bottom: 15px; border: 2px solid #fff; }
         .partner-badge { display: inline-block; padding: 5px 12px; border-radius: 12px; font-size: 0.8rem; background: #3498db; margin-top: 10px; }
+        /* Project Logo */
+.project-logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+    object-fit: contain;
+}
+
+/* Teaser Card con pallini sfocati */
+.teaser-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.teaser-card::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+    filter: blur(40px);
+    pointer-events: none;
+}
+
+.teaser-card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+    filter: blur(35px);
+    pointer-events: none;
+}
+
+.teaser-card .project-copy::before {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    right: 10%;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
+    filter: blur(35px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.teaser-card .project-copy {
+    position: relative;
+    z-index: 1;
+}
+
+/* Services Section */
+.services-section {
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Project Logo */
+.project-logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+    object-fit: contain;
+}
+
+/* Teaser Card con pallini sfocati */
+.teaser-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.teaser-card::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+    filter: blur(40px);
+    pointer-events: none;
+}
+
+.teaser-card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+    filter: blur(35px);
+    pointer-events: none;
+}
+
+.teaser-card .project-copy::before {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    right: 10%;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
+    filter: blur(35px);
+    pointer-events: none;
+}
+
+.teaser-card .project-copy {
+    position: relative;
+    z-index: 1;
+}
