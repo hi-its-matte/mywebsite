@@ -5,130 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MatteDev Studio - Home</title>
     <meta name="description" content="Benvenuti nel mondo MatteDev: Innovazione, Software e l'evento MatteDev Event 2026.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="media/style.css">
 </head>
 <body>
-    <div class="page-shell">
-        <nav class="site-nav">
-            <div class="nav-logo">MatteDev Studio</div>
-            <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="https://platform.mattedev.com" target="_blank" rel="noopener noreferrer">Platform</a>
-                <a href="pages/staff.html">Staff & Partners</a>
-                <a href="mailto:official@mattedev.com">Contatti</a>
-            </div>
-        </nav>
 
+    <!-- NAV -->
+    <nav class="site-nav">
+        <div class="nav-logo">MatteDev Studio</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="https://platform.mattedev.com" target="_blank" rel="noopener noreferrer">Platform</a>
+            <a href="pages/staff.html">Staff & Partners</a>
+            <a href="mailto:official@mattedev.com">Contatti</a>
+        </div>
+    </nav>
+
+    <div class="page-shell">
         <main>
+
+            <!-- ═══ HERO ═══ -->
             <section class="hero">
-                <div class="hero-copy">
-                    <p class="card-kicker">Benvenuti in MatteDev Studio</p>
-                    <h1>Costruiamo il futuro digitale.</h1>
-                    <p>Un laboratorio di innovazione dove codice, design e creatività si uniscono per dare vita ad applicazioni moderne e sicure.</p>
-                    
-                    <div class="hero-notes">
+                <div class="hero-content">
+                    <span class="kicker">Benvenuti in MatteDev Studio</span>
+                    <h1>Costruiamo<br>il futuro<br><em>digitale.</em></h1>
+                    <p class="hero-sub">Un laboratorio di innovazione dove codice, design e creatività si uniscono per dare vita ad applicazioni moderne e sicure.</p>
+                    <div class="hero-tags">
                         <span>Software House</span>
                         <span>Web Design</span>
                         <span>App Development</span>
                     </div>
-
                     <div class="hero-actions">
-                        <a href="https://platform.mattedev.com" class="button button-primary">Scopri i nostri servizi</a>
+                        <a href="https://platform.mattedev.com" class="btn-primary-hero">Scopri i nostri servizi</a>
+                        <a href="pages/staff.html" class="btn-ghost-hero">Chi siamo →</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-orb orb-1"></div>
+                    <div class="hero-orb orb-2"></div>
+                    <div class="hero-orb orb-3"></div>
+                    <div class="floating-card card-a">
+                        <span class="fc-dot dot-green"></span>
+                        <span class="fc-label">Platform attiva</span>
+                    </div>
+                    <div class="floating-card card-b">
+                        <span class="fc-dot dot-blue"></span>
+                        <span class="fc-label">Event 2026</span>
+                    </div>
+                    <div class="floating-card card-c">
+                        <span class="fc-dot dot-purple"></span>
+                        <span class="fc-label">Open Source</span>
                     </div>
                 </div>
             </section>
 
-            <!-- PLATFORM -->
-            <section class="projects-section">
-                <a href="https://platform.mattedev.com" class="project-card highlight-card">
-                    <div class="project-copy">
-                        <p class="card-kicker">Il nostro HUB</p>
-                        <h2>MatteDev Platform</h2>
-                        <p>Il punto di accesso unico a tutti i nostri servizi. Gestisci il tuo account, scopri le nostre web app e scarica i nostri software nativi in modo semplice e veloce.</p>
+            <!-- ═══ PLATFORM SPOTLIGHT ═══ -->
+            <section class="spotlight-section">
+                <a href="https://platform.mattedev.com" class="spotlight-card">
+                    <div class="spotlight-badge">Il nostro HUB</div>
+                    <h2>MatteDev Platform</h2>
+                    <p>Il punto di accesso unico a tutti i nostri servizi. Gestisci il tuo account, scopri le nostre web app e scarica i nostri software nativi in modo semplice e veloce.</p>
+                    <div class="spotlight-cta">
+                        <span>Apri Platform</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
-                    <span class="project-arrow">Apri Platform</span>
+                    <div class="spotlight-glow"></div>
                 </a>
             </section>
 
-            <!-- EVENT -->
-            <section class="projects-section">
-                <a href="https://event.mattedev.com" target="_blank" rel="noopener noreferrer" class="project-card event-card">
-                    <div class="project-copy">
-                        <p class="card-kicker">Prossimamente</p>
-                        <h2>MatteDev Event 2026</h2>
-                        <p>Preparati per l'evento dell'anno. Nuovi annunci, aggiornamenti sui progetti in corso e uno sguardo esclusivo al futuro del nostro Studio.</p>
+            <!-- ═══ DUE COLONNE: EVENT + OPEN SOURCE ═══ -->
+            <section class="two-col-section">
+
+                <a href="https://event.mattedev.com" target="_blank" rel="noopener noreferrer" class="accent-card event-accent">
+                    <div class="accent-top">
+                        <span class="accent-kicker">Prossimamente</span>
+                        <div class="event-countdown-chip">2026</div>
                     </div>
-                    <span class="project-arrow">Scopri di più</span>
+                    <h3>MatteDev Event 2026</h3>
+                    <p>Nuovi annunci, aggiornamenti sui progetti in corso e uno sguardo esclusivo al futuro del nostro Studio.</p>
+                    <div class="accent-cta">Scopri di più →</div>
                 </a>
+
+                <a href="https://open.mattedev.com" target="_blank" rel="noopener noreferrer" class="accent-card open-accent">
+                    <div class="accent-top">
+                        <span class="accent-kicker">Open Source</span>
+                        <div class="oss-chip">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            GitHub
+                        </div>
+                    </div>
+                    <h3>MatteDev Studio<br>è Open Source</h3>
+                    <p>Scopri i nostri progetti open source e contribuisci alla nostra community di sviluppatori.</p>
+                    <div class="accent-cta">Scopri di più →</div>
+                </a>
+
             </section>
 
-            <!-- STAFF -->
-            <section class="projects-section">
-                <a href="pages/staff.html" class="project-card">
-                    <div class="project-copy">
-                        <p class="card-kicker">Chi siamo</p>
-                        <h2>Staff & Partners</h2>
+            <!-- ═══ STAFF ═══ -->
+            <section class="horizontal-card-section">
+                <a href="pages/staff.html" class="horizontal-card">
+                    <div class="hcard-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <div class="hcard-body">
+                        <span class="hcard-kicker">Chi siamo</span>
+                        <h3>Staff & Partners</h3>
                         <p>Incontra il team dietro MatteDev e scopri le compagnie e i partner che collaborano con noi per espandere il nostro orizzonte.</p>
                     </div>
-                    <span class="project-arrow">Vedi il Team</span>
-                </a>
-            </section>
-
-            <section class="projects-section">
-                <a href="https://open.mattedev.com" target="_blank" rel="noopener noreferrer" class="project-card event-card">
-                    <div class="project-copy">
-                        <p class="card-kicker">Open Source</p>
-                        <h2>MatteDev Studio è Open Source</h2>
-                        <p>Scopri i nostri progetti open source e contribuisci alla nostra community di sviluppatori.</p>
+                    <div class="hcard-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </div>
-                    <span class="project-arrow">Scopri di più</span>
                 </a>
             </section>
 
-            <!-- SERVIZI SECTION -->
+            <!-- ═══ SERVIZI ═══ -->
             <section class="services-section">
-                <h2 class="section-title">Scopri i nostri servizi da questa sezione</h2>
-                
+                <div class="services-header">
+                    <span class="kicker">Ecosistema</span>
+                    <h2>I nostri servizi</h2>
+                </div>
                 <div class="services-grid">
-                    <a target="_blank" href="https://ai.mattedev.com" class="project-card">
-                        <div class="project-copy">
-                            <img src="https://media.mattedev.com/img/ai/ailogo.png" alt="MatteDev AI" class="project-logo">
-                            <h3>MatteDev AI</h3>
-                            <p>Strumenti intelligenti e veloci per potenziare il tuo flusso di lavoro con l'intelligenza artificiale.</p>
+
+                    <a href="https://ai.mattedev.com" target="_blank" class="service-card">
+                        <div class="service-icon-wrap">
+                            <img src="https://media.mattedev.com/img/ai/ailogo.png" alt="MatteDev AI" class="service-logo">
                         </div>
+                        <h4>MatteDev AI</h4>
+                        <p>Strumenti intelligenti e veloci per potenziare il tuo flusso di lavoro con l'intelligenza artificiale.</p>
+                        <span class="service-link">Vai al servizio →</span>
                     </a>
 
-                    <a target="_blank" href="https://quill.mattedev.com" class="project-card">
-                        <div class="project-copy">
-                            <img src="https://media.mattedev.com/img/quill/logo.png" alt="Quill" class="project-logo">
-                            <h3>Quill</h3>
-                            <p>Editor di testo moderno, veloce e open source. Scrivi senza distrazioni.</p>
+                    <a href="https://quill.mattedev.com" target="_blank" class="service-card">
+                        <div class="service-icon-wrap">
+                            <img src="https://media.mattedev.com/img/quill/logo.png" alt="Quill" class="service-logo">
                         </div>
+                        <h4>Quill</h4>
+                        <p>Editor di testo moderno, veloce e open source. Scrivi senza distrazioni.</p>
+                        <span class="service-link">Vai al servizio →</span>
                     </a>
 
-                    <a target="_blank" href="https://platform.mattedev.com" class="project-card teaser-card">
-                        <div class="project-copy">
-                                <img src="https://media.mattedev.com/img/extras/altroicon.png" alt="Quill" class="project-logo">
-                            <h3>Molto Altro</h3>
-                            <p>Accedi a Platform e sfoglia l'intero ecosistema MatteDev.</p>
+                    <a href="https://platform.mattedev.com" target="_blank" class="service-card service-more">
+                        <div class="service-icon-wrap">
+                            <img src="https://media.mattedev.com/img/extras/altroicon.png" alt="Altro" class="service-logo">
                         </div>
+                        <h4>Molto Altro</h4>
+                        <p>Accedi a Platform e sfoglia l'intero ecosistema MatteDev.</p>
+                        <span class="service-link">Apri Platform →</span>
                     </a>
+
+                </div>
+            </section>
+
+            <!-- ═══ CONTATTI CTA ═══ -->
+            <section class="cta-section">
+                <div class="cta-inner">
+                    <h2>Hai un progetto in mente?</h2>
+                    <p>Scrivici e trasformiamo la tua idea in realtà.</p>
+                    <a href="#" class="btn-primary-hero">Coming Soon</a>
                 </div>
             </section>
 
         </main>
 
+        <!-- ═══ FOOTER ═══ -->
         <footer class="footer">
-            <p>&copy; MatteDev Studio &bull; 2026</p>
-            <p>Innovazione costante, una riga di codice alla volta.</p>
-            <p>
-                <a href="pages/privacy.html">Privacy Policy</a> / 
-                <a href="pages/tos.html">Terms of Service</a>
-            </p>
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-logo">MatteDev Studio</div>
+                    <p>Innovazione costante,<br>una riga di codice alla volta.</p>
+                </div>
+                <div class="footer-links-col">
+                    <span class="footer-col-title">Studio</span>
+                    <a href="pages/staff.html">Staff & Partners</a>
+                    <a href="https://open.mattedev.com" target="_blank">Open Source</a>
+                    <a href="https://status.mattedev.com" target="_blank">Status</a>
+                    <a href="mailto:official@mattedev.com">Contatti</a>
+                </div>
+                <div class="footer-links-col">
+                    <span class="footer-col-title">Prodotti</span>
+                    <a href="https://platform.mattedev.com" target="_blank">Platform</a>
+                    <a href="https://ai.mattedev.com" target="_blank">MatteDev AI</a>
+                    <a href="https://quill.mattedev.com" target="_blank">Quill</a>
+                    <a href="https://event.mattedev.com" target="_blank">Event 2026</a>
+                    <a href="https://apps.mattedev.com" target="_blank">Scopri Di Più</a>
+                </div>
+                <div class="footer-links-col">
+                    <span class="footer-col-title">Legale</span>
+                    <a href="https://privacy.mattedev.com/" target="_blank">Centro Legale</a>
+                    <a href="https://privacy.mattedev.com/privacy.html " target="_blank">Privacy Policy</a>
+                    <a href="https://privacy.mattedev.com/terms.html" target="_blank">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MatteDev Studio. Tutti i diritti riservati.</p>
+            </div>
         </footer>
     </div>
+
 </body>
 </html>
