@@ -6,7 +6,40 @@
     <title>MatteDev - Staff & Partners</title>
     <link rel="stylesheet" href="/media/style.css">
   
+<script>
+    let targetUrl = "";
 
+function openPopup(url) {
+    targetUrl = url;
+    document.getElementById('popupUrlText').innerText = url;
+    document.getElementById('redirectPopup').style.display = 'flex';
+}
+
+function closePopup() {
+    document.getElementById('redirectPopup').style.display = 'none';
+}
+
+// ⚠️ AVVOLGI QUESTA PARTE COSÌ:
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // Ora JavaScript troverà sicuramente il pulsante
+    document.getElementById('confirmRedirectBtn').addEventListener('click', function() {
+        if (targetUrl) {
+            window.open(targetUrl, '_blank', 'noopener,noreferrer');
+            closePopup();
+        }
+    });
+
+    // Chiude il popup se l'utente clicca fuori dalla scatola bianca
+    window.onclick = function(event) {
+        let popup = document.getElementById('redirectPopup');
+        if (event.target == popup) {
+            closePopup();
+        }
+    }
+    
+});
+</script>
 </head>
 <body>
 
@@ -25,17 +58,35 @@
     <p class="staff-p">Le menti dietro MatteDev Studio.</p>
 
     <h2 style="margin-top: 50px;">Core Team</h2>
-    <div class="staff-grid">
-        <article class="staff-card">
-            <img src="https://media.mattedev.com/img/mlogo.jpg" alt="Founder">
-            <h3>Matte</h3>
-            <p>Founder & Lead Developer</p>
-        </article>
-        <article class="staff-card">
-            <img src="/media/anto.png" alt="Founder">
-            <h3>Anto L.</h3>
-            <p>Founder & Cybersecurity Specialist.</p>
-        </article>
+
+<div class="staff-grid">
+    
+    <article class="staff-card">
+        <img src="https://media.mattedev.com/img/mlogo.jpg" alt="Founder">
+        <h3>Matte</h3>
+        <p>Founder & Lead Developer</p>
+        <button onclick="openPopup('https://guns.lol/mattedev')" class="btn-link">Visualizza Profilo</button>
+    </article>
+
+    <article class="staff-card">
+        <img src="/media/anto.png" alt="Founder">
+        <h3>Anto L.</h3>
+        <p>Founder & Cybersecurity Specialist.</p>
+        <button onclick="openPopup('https://guns.lol/4nt0')" class="btn-link">Visualizza Profilo</button>
+    </article>
+
+</div> <div id="redirectPopup" class="popup-overlay">
+    <div class="popup-content">
+        <h3>Stai per lasciare il sito</h3>
+        <p>Verrai reindirizzato a un link esterno non affiliato: <br><strong id="popupUrlText"></strong></p>
+        <div class="popup-buttons">
+            <button onclick="closePopup()" class="btn-cancel">Annulla</button>
+            <button id="confirmRedirectBtn" class="btn-confirm">Procedi a mio rischio</button>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
         </div>
 
     <h2 style="margin-top: 50px;">Acquisizioni & Partner</h2>
