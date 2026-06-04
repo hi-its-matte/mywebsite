@@ -32,7 +32,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     background: var(--bg);
     color: var(--text);
     line-height: 1.65;
@@ -885,4 +885,142 @@ main {
     border-radius: 24px;    /* Arrotondamento dei lati (puoi aumentarlo o diminuirlo) */
     
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Un'ombra leggera per dare profondità */
+}
+
+/* ══════════════════════════════════════════════
+   STAFF APPLICATION PAGE
+══════════════════════════════════════════════ */
+.staffapp-hero {
+    padding: 80px 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 32px;
+    align-items: center;
+}
+.staffapp-hero h1 {
+    font-size: clamp(2.6rem, 6vw, 4.2rem);
+    line-height: 1.02;
+    margin-bottom: 10px;
+}
+.staffapp-hero .hero-animated { display: inline-block; background-clip: text; -webkit-background-clip: text; }
+.stat-block { font-size: 14px; }
+.big-hero { font-size: clamp(2.8rem, 6vw, 4.6rem); font-weight: 900; }
+.accent-text { background: linear-gradient(90deg,var(--accent),var(--purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero-left .hero-desc { font-size: 1.05rem; margin-top: 10px; }
+.hero-cta-row { display:flex; gap:16px; align-items:center; margin-top:14px; }
+.pill-muted { background: rgba(255,255,255,0.03); padding:8px 14px; border-radius:999px; color:var(--muted); font-weight:700; }
+.staffapp-hero .hero-desc { color: var(--muted); margin-bottom: 22px; max-width: 52ch; }
+
+.roles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 28px;
+}
+.role-card {
+    padding: 20px;
+    border-radius: var(--radius-md);
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: 1px solid var(--border);
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+.role-card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.45); border-color: var(--border-hover); }
+.role-emoji { font-size: 1.6rem; margin-bottom: 8px; display: inline-block; }
+.role-title { font-weight: 700; color: var(--text); margin-bottom: 8px; }
+.role-desc { color: var(--muted); font-size: 14px; }
+
+/* Make role cards pop with subtle gradient and glow */
+.role-card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(126,168,248,0.02)); border: 1px solid rgba(126,168,248,0.06); }
+.role-card:hover { box-shadow: 0 18px 40px rgba(126,168,248,0.06); }
+
+/* Feature panel on hero right */
+.feature-panel { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius: 18px; padding: 18px; border: 1px solid rgba(126,168,248,0.06); box-shadow: 0 18px 40px rgba(0,0,0,0.55); display:flex; flex-direction:column; gap:12px; align-items:stretch; }
+.panel-top { display:flex; justify-content:space-between; align-items:center; gap:10px; }
+.panel-kicker { font-size:12px; color:var(--muted); font-weight:700; }
+.panel-badges { display:flex; gap:8px; }
+.panel-badges .pill { background: rgba(255,255,255,0.04); padding:6px 10px; border-radius:999px; color:var(--muted); font-weight:700; font-size:12px; }
+.panel-visual { display:flex; justify-content:center; align-items:center; padding:12px; }
+.panel-footer { display:flex; justify-content:flex-end; }
+.apply-cta.small { padding:10px 14px; font-size:13px; }
+
+/* Process grid */
+.process-section h2 { margin-bottom:18px; }
+.process-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:18px; justify-items: center; justify-content: center; max-width: 980px; margin: 0 auto; }
+.process-step { background: var(--surface); padding:18px; border-radius:14px; border:1px solid var(--border); text-align:left; }
+.process-step { text-align:center; }
+.process-step .step-num { font-weight:800; color:var(--accent); margin-bottom:8px; }
+
+@media (max-width:900px) {
+    .staffapp-hero { grid-template-columns: 1fr; }
+    .process-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* Center texts for staffapp page */
+.staffapp-page main { text-align: center; }
+.staffapp-page .hero-left, .staffapp-page .hero-right, .staffapp-page .roles-grid .role-card, .staffapp-page .process-step, .staffapp-page .requirements { text-align: center; }
+.staffapp-page .requirements { display:flex; justify-content:center; flex-wrap:wrap; gap:10px; }
+.staffapp-page .roles-grid { justify-items: center; }
+.staffapp-page .role-card { margin: 0 auto; }
+
+/* Narrow the page shell slightly for a centered hero on this page */
+.staffapp-page .page-shell { width: min(980px, calc(100% - 48px)); }
+.staffapp-page .hero-left { max-width: 820px; margin: 0 auto; display:flex; flex-direction:column; align-items:center; }
+
+/* Force single-column hero on the staffapp page so everything centers */
+.staffapp-page .staffapp-hero { grid-template-columns: 1fr !important; }
+
+/* Center the nav and footer on the staffapp page only */
+.staffapp-page .site-nav { justify-content: center; }
+.staffapp-page .site-nav .nav-links { justify-content: center; gap: 18px; }
+.staffapp-page .site-nav .nav-logo { margin-right: 12px; }
+
+.staffapp-page .footer-inner { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.staffapp-page .footer-links-col { align-items: center; text-align: center; }
+.staffapp-page .footer-bottom { text-align: center; }
+
+.requirements { margin-top: 28px; display: grid; gap: 10px; }
+.req-badge { display: inline-flex; gap: 10px; align-items: center; padding: 10px 14px; border-radius: 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.04); color: var(--muted); font-weight: 600; }
+
+.apply-cta { display: inline-flex; align-items: center; gap: 10px; padding: 16px 28px; border-radius: 999px; background: linear-gradient(90deg,var(--accent),var(--purple)); color: #061025; font-weight: 800; font-size: 16px; border: none; box-shadow: 0 10px 30px rgba(126,168,248,0.12); transition: transform var(--transition), box-shadow var(--transition); }
+.apply-cta:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(126,168,248,0.18); }
+
+/* ══════════════════════════════════════════════
+   VOLUNTEER POPUP (BOTTOM-RIGHT)
+══════════════════════════════════════════════ */
+.volunteer-popup {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    max-width: 360px;
+    width: calc(100% - 48px);
+    background: linear-gradient(180deg, rgba(6,8,20,0.96), rgba(10,10,10,0.98));
+    border: 1px solid rgba(126,168,248,0.12);
+    padding: 20px 18px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(2,6,23,0.6), 0 0 40px rgba(126,168,248,0.08), 0 0 12px rgba(167,139,250,0.04);
+    z-index: 9999;
+    display: none;
+    transform: translateX(20px) translateY(6px) scale(0.98);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(.2,.9,.2,1), opacity 0.32s ease;
+}
+.volunteer-popup.show { display: block; transform: translateX(0) translateY(0) scale(1); opacity: 1; }
+.volunteer-popup .vp-title { font-weight: 800; color: var(--text); margin-bottom: 6px; }
+.volunteer-popup .vp-sub { color: var(--muted); font-size: 14px; margin-bottom: 12px; }
+.volunteer-popup .vp-actions { display: flex; gap: 8px; align-items: center; }
+.volunteer-popup .vp-cta { flex: 1; padding: 12px 14px; border-radius: 12px; background: linear-gradient(90deg,var(--accent),var(--purple)); color: #061025; font-weight: 800; text-align: center; box-shadow: 0 8px 30px rgba(126,168,248,0.12); }
+.volunteer-popup .vp-cta:hover { transform: translateY(-3px); }
+.volunteer-popup .vp-close { position: absolute; top: 8px; right: 10px; background: transparent; border: none; color: var(--muted); font-size: 20px; cursor: pointer; padding: 6px; border-radius: 8px; }
+.volunteer-popup .vp-close:focus { outline: 2px solid rgba(126,168,248,0.14); }
+
+/* small glow accent */
+.volunteer-popup::after { content: ''; position: absolute; inset: -8px; border-radius: 18px; pointer-events: none; box-shadow: 0 12px 40px rgba(126,168,248,0.06); }
+
+/* Animations */
+.fade-in-up { transform: translateY(8px); opacity: 0; animation: fadeUp 0.6s forwards ease-out; }
+@keyframes fadeUp { to { transform: translateY(0); opacity: 1; } }
+
+@media (max-width: 700px) {
+    .staffapp-hero { grid-template-columns: 1fr; }
+    .volunteer-popup { right: 12px; left: 12px; max-width: none; bottom: 12px; }
 }

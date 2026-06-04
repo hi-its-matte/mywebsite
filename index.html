@@ -5,7 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MatteDev Studio - Home</title>
     <meta name="description" content="Benvenuti nel mondo MatteDev: Innovazione, Software e l'evento MatteDev Event 2026.">
-    <link rel="stylesheet" href="media/style.css">
+    <link rel="stylesheet" href="/media/style.css">
+        <link rel="canonical" href="/">
+        <!-- Open Graph -->
+        <meta property="og:title" content="MatteDev Studio — Innovazione e Community">
+        <meta property="og:description" content="Benvenuti nel mondo MatteDev: Innovazione, Software e Community. Scopri i nostri progetti, eventi e opportunità per collaborare.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="/">
+        <meta property="og:image" content="https://media.mattedev.com/img/mlogo.jpg">
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="MatteDev Studio — Innovazione e Community">
+        <meta name="twitter:description" content="Benvenuti nel mondo MatteDev: Innovazione, Software e Community. Scopri i nostri progetti, eventi e opportunità per collaborare.">
+        <meta name="twitter:image" content="https://media.mattedev.com/img/mlogo.jpg">
+
+        <!-- JSON-LD: Organization -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "MatteDev Studio",
+            "url": "/",
+            "logo": "https://media.mattedev.com/img/mlogo.jpg"
+        }
+        </script>
 </head>
 <body>
 
@@ -13,9 +36,10 @@
     <nav class="site-nav">
         <div class="nav-logo">MatteDev Studio</div>
         <div class="nav-links">
-            <a href="index.html" class="active">Home</a>
+            <a href="/index.html" class="active">Home</a>
             <a href="https://platform.mattedev.com" target="_blank" rel="noopener noreferrer">Platform</a>
-            <a href="pages/staff.html">Staff & Partners</a>
+            <a href="/pages/staff.html">Staff & Partners</a>
+            <a href="pages/staffapp.html">Lavora con noi</a>
             <a href="mailto:official@mattedev.com">Contatti</a>
         </div>
     </nav>
@@ -154,38 +178,68 @@
 
         <!-- ═══ FOOTER ═══ -->
         <footer class="footer">
-            <div class="footer-inner">
-                <div class="footer-brand">
-                    <div class="footer-logo">MatteDev Studio</div>
-                    <p>Innovazione costante,<br>una riga di codice alla volta.</p>
-                </div>
-                <div class="footer-links-col">
-                    <span class="footer-col-title">Studio</span>
-                    <a href="pages/staff.html">Staff & Partners</a>
-                    <a href="https://open.mattedev.com" target="_blank">Open Source</a>
-                    <a href="https://status.mattedev.com" target="_blank">Status</a>
-                    <a href="mailto:official@mattedev.com">Contatti</a>
-                </div>
-                <div class="footer-links-col">
-                    <span class="footer-col-title">Prodotti</span>
-                    <a href="https://platform.mattedev.com" target="_blank">Platform</a>
-                    <a href="https://ai.mattedev.com" target="_blank">MatteDev AI</a>
-                    <a href="https://quill.mattedev.com" target="_blank">Quill</a>
-                    <a href="https://event.mattedev.com" target="_blank">Event 2026</a>
-                    <a href="https://apps.mattedev.com" target="_blank">Scopri Di Più</a>
-                </div>
-                <div class="footer-links-col">
-                    <span class="footer-col-title">Legale</span>
-                    <a href="https://privacy.mattedev.com/" target="_blank">Centro Legale</a>
-                    <a href="https://privacy.mattedev.com/privacy.html " target="_blank">Privacy Policy</a>
-                    <a href="https://privacy.mattedev.com/terms.html" target="_blank">Terms of Service</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 MatteDev Studio. Tutti i diritti riservati.</p>
-            </div>
-        </footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="footer-logo">MatteDev Studio</div>
+            <p>Innovazione costante,<br>una riga di codice alla volta.</p>
+        </div>
+        <div class="footer-links-col">
+            <span class="footer-col-title">Studio</span>
+            <a href="staff.html">Staff & Partners</a>
+            <a href="/pages/staffapp.html">Entra nel Team</a>
+            <a href="https://open.mattedev.com" target="_blank">Open Source</a>
+            <a href="mailto:official@mattedev.com">Contatti</a>
+        </div>
+        <div class="footer-links-col">
+            <span class="footer-col-title">Prodotti</span>
+            <a href="https://platform.mattedev.com" target="_blank">Platform</a>
+            <a href="https://ai.mattedev.com" target="_blank">MatteDev AI</a>
+            <a href="https://quill.mattedev.com" target="_blank">Quill</a>
+        </div>
+        <div class="footer-links-col">
+            <span class="footer-col-title">Legale</span>
+            <a href="https://privacy.mattedev.com/" target="_blank">Centro Legale</a>
+            <a href="https://privacy.mattedev.com/privacy.html " target="_blank">Privacy Policy</a>
+        </div>
     </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 MatteDev Studio. Tutti i diritti riservati.</p>
+    </div>
+</footer>
+    </div>
+</div>
+
+<!-- Volunteer popup -->
+<div id="volunteerPopup" class="volunteer-popup" aria-hidden="true">
+    <div class="vp-body">
+        <div class="vp-title">Siamo in cerca di volontari! 🙌</div>
+        <div class="vp-sub">Entra nel team di MatteDev Studio e fai la differenza.</div>
+        <div class="vp-actions">
+            <a href="pages/staffapp.html" class="vp-cta" id="vpCta">Scopri come candidarti →</a>
+            <button id="vpClose" class="vp-close" aria-label="Chiudi" title="Chiudi">×</button>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+    try {
+        var popup = document.getElementById('volunteerPopup');
+        var closeBtn = document.getElementById('vpClose');
+        // hide close for first 5s, show popup after 1.2s
+        closeBtn.style.display = 'none';
+        setTimeout(function(){
+            popup.classList.add('show');
+            setTimeout(function(){ closeBtn.style.display = 'inline-block'; }, 5000);
+        }, 1200);
+
+        closeBtn.addEventListener('click', function(){
+            popup.classList.remove('show');
+        });
+
+    } catch(e){ console.error(e); }
+});
+</script>
 
 </body>
 </html>
