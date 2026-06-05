@@ -974,9 +974,7 @@ main {
 .staffapp-page .site-nav .nav-links { justify-content: center; gap: 18px; }
 .staffapp-page .site-nav .nav-logo { margin-right: 12px; }
 
-.staffapp-page .footer-inner { display: flex; flex-direction: column; align-items: center; gap: 16px; }
-.staffapp-page .footer-links-col { align-items: center; text-align: center; }
-.staffapp-page .footer-bottom { text-align: center; }
+/* Footer uses default site styles; no staffapp-specific overrides */
 
 .requirements { margin-top: 28px; display: grid; gap: 10px; }
 .req-badge { display: inline-flex; gap: 10px; align-items: center; padding: 10px 14px; border-radius: 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.04); color: var(--muted); font-weight: 600; }
