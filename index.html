@@ -3,43 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MatteDev Studio - Home</title>
-    <meta name="description" content="Benvenuti nel mondo MatteDev: Innovazione, Software e l'evento MatteDev Event 2026.">
+    <title>MatteDev Studio | Software, Web Design e AI</title>
+    <meta name="description" content="MatteDev Studio crea software, siti web e soluzioni AI moderne per aziende e community. Scopri i nostri servizi e i progetti innovativi.">
     <link rel="stylesheet" href="/media/style.css">
-        <link rel="canonical" href="/">
-        <!-- Open Graph -->
-        <meta property="og:title" content="MatteDev Studio — Innovazione e Community">
-        <meta property="og:description" content="Benvenuti nel mondo MatteDev: Innovazione, Software e Community. Scopri i nostri progetti, eventi e opportunità per collaborare.">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="/">
-        <meta property="og:image" content="https://media.mattedev.com/img/mlogo.jpg">
-        <!-- Twitter -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="MatteDev Studio — Innovazione e Community">
-        <meta name="twitter:description" content="Benvenuti nel mondo MatteDev: Innovazione, Software e Community. Scopri i nostri progetti, eventi e opportunità per collaborare.">
-        <meta name="twitter:image" content="https://media.mattedev.com/img/mlogo.jpg">
+    <link rel="canonical" href="https://mattedev.com/">
+    <!-- Open Graph -->
+    <meta property="og:title" content="MatteDev Studio | Software, Web Design e AI">
+    <meta property="og:description" content="MatteDev Studio crea software, siti web e soluzioni AI moderne per aziende e community. Scopri i nostri servizi e i progetti innovativi.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mattedev.com/">
+    <meta property="og:image" content="https://media.mattedev.com/img/mlogo.jpg">
+    <meta property="og:site_name" content="MatteDev Studio">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MatteDev Studio | Software, Web Design e AI">
+    <meta name="twitter:description" content="MatteDev Studio crea software, siti web e soluzioni AI moderne per aziende e community. Scopri i nostri servizi e i progetti innovativi.">
+    <meta name="twitter:image" content="https://media.mattedev.com/img/mlogo.jpg">
 
-        <!-- JSON-LD: Organization -->
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "MatteDev Studio",
-            "url": "/",
-            "logo": "https://media.mattedev.com/img/mlogo.jpg"
-        }
-        </script>
+    <!-- JSON-LD: Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MatteDev Studio",
+        "url": "https://mattedev.com/",
+        "logo": "https://media.mattedev.com/img/mlogo.jpg",
+        "sameAs": [
+            "https://platform.mattedev.com",
+            "https://open.mattedev.com",
+            "https://ai.mattedev.com"
+        ]
+    }
+    </script>
 </head>
 <body>
 
     <!-- NAV -->
-    <nav class="site-nav">
-        <div class="nav-logo">MatteDev Studio</div>
+    <nav class="site-nav" aria-label="Navigazione principale">
+        <div class="nav-logo" aria-label="MatteDev Studio home">
+            <a href="/index.html" class="nav-brand-link" aria-label="Torna alla home di MatteDev Studio">
+                <img src="https://media.mattedev.com/img/mlogo.jpg" alt="Logo MatteDev Studio" class="nav-brand-logo" loading="eager">
+            </a>
+            <span class="nav-brand-text">MatteDev Studio</span>
+        </div>
         <div class="nav-links">
             <a href="/index.html" class="active">Home</a>
             <a href="https://platform.mattedev.com" target="_blank" rel="noopener noreferrer">Platform</a>
+            <a href="/pages/servizi.html">Servizi</a>
             <a href="/pages/staff.html">Staff & Partners</a>
-            <a href="pages/staffapp.html">Lavora con noi</a>
+            <a href="/pages/staffapp.html">Lavora con noi</a>
             <a href="mailto:official@mattedev.com">Contatti</a>
         </div>
     </nav>
@@ -48,23 +60,20 @@
         <main>
 
             <!-- ═══ HERO ═══ -->
-            <section class="hero">
+            <section class="hero" aria-labelledby="hero-title">
                 <div class="hero-content">
                     <span class="kicker">Benvenuti in MatteDev Studio</span>
-                    <h1>Costruiamo<br>il futuro<br><em>digitale.</em></h1>
+                    <h1 id="hero-title">Costruiamo<br>il futuro<br><em>digitale.</em></h1>
                     <p class="hero-sub">Un laboratorio di innovazione dove codice, design e creatività si uniscono per dare vita ad applicazioni moderne e sicure.</p>
-                    <div class="hero-tags">
+                    <div class="hero-tags" aria-label="Servizi principali">
                         <span>Software House</span>
                         <span>Web Design</span>
                         <span>App Development</span>
                     </div>
                     <div class="hero-actions">
-                        <a href="https://platform.mattedev.com" class="btn-primary-hero">Scopri i nostri servizi</a>
-                        <a href="pages/staff.html" class="btn-ghost-hero">Chi siamo →</a>
+                        <a href="/pages/servizi.html" class="btn-primary-hero">Scopri i nostri servizi</a>
+                        <a href="/pages/staff.html" class="btn-ghost-hero">Chi siamo →</a>
                     </div>
-                </div>
-                <div class="hero-visual">
-                 <img src="https://media.mattedev.com/img/mlogo.jpg" alt="MatteDev Studio Logo" class="hero-logo-clean">
                 </div>
             </section>
 
@@ -153,26 +162,19 @@
                         <span class="service-link">Vai al servizio →</span>
                     </a>
 
-                    <a href="https://platform.mattedev.com" target="_blank" class="service-card service-more">
+                    <a href="pages/servizi.html" target="_blank" class="service-card service-more">
                         <div class="service-icon-wrap">
                             <img src="https://media.mattedev.com/img/extras/altroicon.png" alt="Altro" class="service-logo">
                         </div>
                         <h4>Molto Altro</h4>
-                        <p>Accedi a Platform e sfoglia l'intero ecosistema MatteDev.</p>
-                        <span class="service-link">Apri Platform →</span>
+                        <p>Scopri l'intero ecosistema MatteDev.</p>
+                        <span class="service-link">Vai ai servizi →</span>
                     </a>
 
                 </div>
             </section>
 
-            <!-- ═══ CONTATTI CTA ═══ -->
-            <section class="cta-section">
-                <div class="cta-inner">
-                    <h2>Hai un progetto in mente?</h2>
-                    <p>Scrivici e trasformiamo la tua idea in realtà.</p>
-                    <a href="#" class="btn-primary-hero">Coming Soon</a>
-                </div>
-            </section>
+            
 
         </main>
 
